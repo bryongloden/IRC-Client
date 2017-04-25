@@ -23,10 +23,6 @@ IRCClient: IRCClient.cc
 IRCClientTimer: IRCClientTimer.cc
 	g++ -g -o IRCClientTimer IRCClientTimer.cc `pkg-config --cflags --libs gtk+-2.0`
 
-git:
-	git add -A  >> .local.git.out
-	git commit -a -m "Make IRCclient" >> .local.git.out
-
 TestIRCServer: TestIRCServer.c
 	g++ -g -o TestIRCServer TestIRCServer.c
 
